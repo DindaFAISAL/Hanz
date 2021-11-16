@@ -13,7 +13,7 @@ const { color, getBuffer, convertMp3 } = require('./lib/func')
 moment.tz.setDefault('Asia/Jakarta').locale('id');
 module.exports = handle = (client, Client) => {
     try {
-        /*DOWNLOADER*/
+        /*DOWNLOAD*/
         Client.cmd.on('ytmp4', async (data) => {
             try {
                 if(isLimit(data.sender)) return data.reply(mess.limit)
